@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url('../img/carbon_fibre.png') fixed;
+}
+
+header {
+	
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #ddd;
+	text-shadow: 1px 1px 5px black;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3em;
+	font-family: "Verdana", sans-serif;
+}
+
+header p {
+	margin: 0;
+	margin-top: 15px;
+	font-size: 2em;
+}
+section {
+	background: #eee;
+	margin: 0 auto;
+	width: 50%;
+	min-height: 400px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 1px 7px black;
+}
+
+h2 {
+	text-align: center;
+}
+
+.input-group {
+	width: 35%;
+	margin: 10px auto;
+	text-align: center;
+
+}
+
+.input-group > input {
+	width: 70%;
+}
+
+.input-group > label {
+	font-size: 1.15em;
+	width: 30%;
+}
+
+.input-group > button {
+	width: 100%;
+}
+
+ul {
+	text-align: center;
+	list-style: none;
+	margin: 25px 0 0 0;
+}
+
+li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.clearfix {
+	display: table;
+	content: "";
+	clear: both;
+}
