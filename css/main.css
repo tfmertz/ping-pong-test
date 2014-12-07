@@ -41,24 +41,33 @@ h2 {
 	text-align: center;
 }
 
-.input-group {
-	width: 95%;
-	margin: 10px auto;
+.form-group {
+	width: 100%;
 	text-align: center;
 
 }
 
-.input-group > input {
+.input-group {
+	margin-bottom: 15px;
+	width: 300px;
+	margin: 0 auto 10px;
+}
 
+.input-group > input {
+	display: inline-block;
 }
 
 .input-group > label {
 	font-size: 1.15em;
-	width: 30%;
+	width: 87px;
+	margin: 0;
+	display: inline-block;
 }
 
 .input-group > button {
-	width: 270px;
+	display: inline-block;
+	width: 100%;
+	height: 50px;
 }
 
 ul {
