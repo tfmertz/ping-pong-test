@@ -44,6 +44,11 @@ var pingPong = function() {
 			pong = temp;
 		}
 
+		//update the fields so the user knows what we did
+		inputText.value = input;
+		pingText.value = ping;
+		pongText.value = pong;
+
 		for (var i = 1; i <= input; i++) {
 			var listItem = document.createElement("li");
 			
@@ -66,7 +71,7 @@ var pingPong = function() {
 	}
 	else {
 		var error = document.createElement("p");
-		error.innerHTML = "Please enter a positive number between 1 and 2500 (inclusive)!";
+		error.innerHTML = "Please enter positive numbers between 1 and 2500 (inclusive)!";
 		error.className = "error";
 		resultList.appendChild(error);
 	}
