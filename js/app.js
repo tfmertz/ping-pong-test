@@ -46,7 +46,7 @@ var pingPong = function() {
 	}
 	else {
 		var error = document.createElement("p");
-		error.innerHTML = "There was an error with your input, please enter a positive number!";
+		error.innerHTML = "Please enter a positive number between 1 and 2500 (inclusive)!";
 		error.className = "error";
 		resultList.appendChild(error);
 	}
@@ -55,7 +55,7 @@ var pingPong = function() {
 
 function validateInput(input) {
 	//if no value is assigned or if input is less than or equal to 0, return false
-	return input && input > 0 && input < 2500;
+	return input && input > 0 && input < 2501;
 }
 
 //add a listener to the button that executes pingPong on click
