@@ -29,7 +29,8 @@ header p {
 section {
 	background: #eee;
 	margin: 0 auto;
-	width: 50%;
+	max-width: 600px;
+	width: 95%;
 	min-height: 400px;
 	padding: 10px;
 	border-radius: 5px;
@@ -41,14 +42,14 @@ h2 {
 }
 
 .input-group {
-	width: 35%;
+	width: 95%;
 	margin: 10px auto;
 	text-align: center;
 
 }
 
 .input-group > input {
-	width: 70%;
+	width: ;
 }
 
 .input-group > label {
@@ -57,7 +58,7 @@ h2 {
 }
 
 .input-group > button {
-	width: 100%;
+	width: 270px;
 }
 
 ul {
