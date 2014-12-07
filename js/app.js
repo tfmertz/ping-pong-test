@@ -10,6 +10,10 @@
 var submitButton = document.getElementById("calculate");
 //the input text element
 var inputText = document.getElementById("number");
+//ping input
+var pingText = document.getElementById("ping");
+//pong input
+var pongText = document.getElementById("pong");
 //the list to output the results or errors
 var resultList = document.getElementById("results");
 
@@ -17,25 +21,41 @@ var resultList = document.getElementById("results");
 //pingPong function calculates our results and displays them
 var pingPong = function() {
 	//grab the input from the input field
-	input = parseInt(inputText.value);
+	var input = parseInt(inputText.value);
+	var ping = parseInt(pingText.value);
+	var pong = parseInt(pongText.value); 
+
 
 	//clear out the list
 	resultList.innerHTML = "";
 	
 
-	if(validateInput(input)) {
+	if(validateInput(input, ping, pong)) {
+
+		//turn negatives into positives
+		input = Math.abs(input);
+		ping = Math.abs(ping);
+		pong = Math.abs(pong);
+
+		//swap ping and pong if ping greater than pong
+		if (ping > pong) {
+			var temp = ping;
+			ping = pong;
+			pong = temp;
+		}
+
 		for (var i = 1; i <= input; i++) {
 			var listItem = document.createElement("li");
 			
-			if(i % 3 == 0 && i % 5 == 0) {
+			if(i % ping == 0 && i % pong == 0) {
 				listItem.innerHTML = "ping-pong";
 				listItem.className = "yellow";
 			}
-			else if(i % 3 == 0) {
+			else if(i % ping == 0) {
 				listItem.innerHTML = "ping";
 				listItem.className = "oj";
 			}
-			else if(i % 5 == 0) {
+			else if(i % pong == 0) {
 				listItem.innerHTML = "pong";
 				listItem.className = "blue";
 			}
@@ -53,9 +73,9 @@ var pingPong = function() {
 };
 
 
-function validateInput(input) {
+function validateInput(input, ping, pong) {
 	//if no value is assigned or if input is less than or equal to 0, return false
-	return input && input > 0 && input < 2501;
+	return input && ping && pong && Math.abs(input) < 2501;
 }
 
 //add a listener to the button that executes pingPong on click
