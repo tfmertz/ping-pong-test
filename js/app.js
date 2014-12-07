@@ -29,12 +29,15 @@ var pingPong = function() {
 			
 			if(i % 3 == 0 && i % 5 == 0) {
 				listItem.innerHTML = "ping-pong";
+				listItem.className = "yellow";
 			}
 			else if(i % 3 == 0) {
 				listItem.innerHTML = "ping";
+				listItem.className = "oj";
 			}
 			else if(i % 5 == 0) {
 				listItem.innerHTML = "pong";
+				listItem.className = "blue";
 			}
 			else listItem.innerHTML = i;
 

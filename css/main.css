@@ -105,6 +105,16 @@ footer a:hover {
 	text-align: center;
 	color: red;
 }
+
+.oj {
+	background: #FF8250;
+}
+.blue {
+	background: #4D9BD7;
+}
+.yellow {
+	background: #FFD350;
+}
 .clearfix {
 	display: table;
 	content: "";
