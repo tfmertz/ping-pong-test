@@ -68,6 +68,15 @@ h2 {
 	display: inline-block;
 	width: 100%;
 	height: 50px;
+	background: #2DA15F;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #eee;
+}
+
+.input-group > button:hover {
+	background: black;
 }
 
 ul {
