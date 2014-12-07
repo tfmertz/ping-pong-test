@@ -13,6 +13,7 @@ var inputText = document.getElementById("number");
 //the list to output the results or errors
 var resultList = document.getElementById("results");
 
+
 //pingPong function calculates our results and displays them
 var pingPong = function() {
 	//grab the input from the input field
@@ -35,14 +36,15 @@ var pingPong = function() {
 			else if(i % 5 == 0) {
 				listItem.innerHTML = "pong";
 			}
-			else listItem.innerHTML = i;;
+			else listItem.innerHTML = i;
 
 			resultList.appendChild(listItem);
 		}
 	}
 	else {
-		var error = document.createElement("li");
+		var error = document.createElement("p");
 		error.innerHTML = "There was an error with your input, please enter a positive number!";
+		error.className = "error";
 		resultList.appendChild(error);
 	}
 };
@@ -50,7 +52,7 @@ var pingPong = function() {
 
 function validateInput(input) {
 	//if no value is assigned or if input is less than or equal to 0, return false
-	return input && input > 0
+	return input && input > 0 && input < 2500;
 }
 
 //add a listener to the button that executes pingPong on click
