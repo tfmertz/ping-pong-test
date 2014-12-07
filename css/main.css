@@ -71,6 +71,27 @@ li {
 	margin-right: 5px;
 }
 
+footer {
+	background: #151515;
+	height: 240px;
+	color: #ddd;
+	text-align: center;
+	padding-top: 25px;
+	margin-top: 220px;
+	border-top: 1px solid black;
+	font-size: 1.1em;
+}
+
+footer a {
+	color: #ddd;
+	padding: 5px 5px 5px 0;
+}
+
+footer a:hover {
+	color: #D7924D;
+	text-decoration: none;
+}
+
 .clearfix {
 	display: table;
 	content: "";
