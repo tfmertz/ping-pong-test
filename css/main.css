@@ -35,15 +35,11 @@ section {
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0 1px 7px black;
-}
-
-h2 {
 	text-align: center;
 }
 
 .form-group {
 	width: 100%;
-	text-align: center;
 
 }
 
@@ -82,9 +78,10 @@ h2 {
 
 ul {
 	list-style: none;
-	margin: 25px 0 0 0;
+	margin: 25px auto 0 auto;
 	padding: 0;
-	text-align: center;
+	width: 95%;
+	text-align: left;
 }
 
 li {
@@ -94,7 +91,6 @@ li {
 	height: 64px;
 	width: 64px;
 	background: white;
-	text-align: center;
 	font-weight: bold;
 	vertical-align: top;
 /*	padding-top: 10px;*/
